@@ -61,3 +61,4 @@ Recommendations
 Generate a Gmail App Password and use it in .env.
 Always test first with --simulate before sending real emails.
 For client demos, use --limit 5 or another low number.
+# automation_csv
