@@ -1,0 +1,6 @@
+mi_entorno/
+.env
+__pycache__/
+*.pyc
+output/
+logs/
