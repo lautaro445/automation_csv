@@ -1,64 +1,41 @@
 Automation CSV Email Sender
-Description
+What it does
 
-This project processes CSV files with customer data, validates email addresses, filters them by domain, and sends automated messages. It can run in simulation mode or real sending mode via SMTP (Gmail or any other server).
+This project processes CSV files with customer data:
 
-Installation
-Clone the repository:
-git clone <your-repo-url>
-cd automation_csv
-Create and activate a virtual environment:
-python3 -m venv my_env
-source my_env/bin/activate
-Install dependencies:
-pip install -r requirements.txt
-Create a .env file with SMTP credentials:
+Validates email addresses
+Filters emails by domain (default: gmail.com)
+Generates output CSV files: valid, invalid, and filtered emails
+Optionally sends emails (simulation or real)
+Quick Start
+Linux / Mac
+Open terminal in the project folder
+Run simulation:
+./run.sh simulate
+Send real emails:
+./run.sh send
+Windows
+Open Command Prompt in the project folder
+Run simulation:
+run.bat simulate
+Send real emails:
+run.bat send
+Input / Output
+Place CSV files in the data/ folder
+Outputs are saved in output/:
+valid_emails.csv → all valid emails
+invalid_emails.csv → invalid emails
+filtered_emails.csv → emails filtered by domain
+Logs are saved in logs/app.log
+Email Setup
+Create a .env file (do not commit it):
 EMAIL_USER=your_email@gmail.com
-EMAIL_PASS=generated_app_password
+EMAIL_PASS=your_app_password
 SMTP_SERVER=smtp.gmail.com
 SMTP_PORT=587
-
-Do not commit .env to the repository. Add it to .gitignore.
-
-Usage
-Simulation Mode
-
-Does not send emails, only generates logs:
-
-python3 main.py -i data --simulate
-Real Sending Mode
-
-Sends actual emails using SMTP:
-
-python3 main.py -i data --send
-Limit Emails for Testing
-python3 main.py -i data --send --limit 5
-Flag Validation
-You cannot use --simulate and --send at the same time.
-If no emails remain after filtering, the script will warn and exit without error.
-Output
-
-Generated files are saved in the output folder:
-
-filtered_emails.csv – emails filtered by domain
-valid_emails.csv – all valid emails
-invalid_emails.csv – invalid emails
-
-Logs are saved in logs/app.log:
-
-File loading info
-Validation results
-Email sending (simulated or real)
-Errors per email if any
-Example Log
-2026-04-01 14:09:44 - INFO - Loaded file: clientes.csv
-2026-04-01 14:09:44 - INFO - Valid emails: 3
-2026-04-01 14:09:44 - INFO - Invalid emails: 1
-2026-04-01 14:10:00 - INFO - Running in simulation mode
-[SEND] Email to jairo@gmail.com (simulated)
-[SEND] Email to fausto@gmail.com (simulated)
-Recommendations
-Generate a Gmail App Password and use it in .env.
-Always test first with --simulate before sending real emails.
-For client demos, use --limit 5 or another low number.
-# automation_csv
+Generate a Gmail App Password if using Gmail
+Test first with simulation before sending real emails
+Notes
+Simulation mode does not send emails, just logs the process
+Real mode sends emails according to the CSV and filters
+For demos, limit emails using --limit (see manual)
