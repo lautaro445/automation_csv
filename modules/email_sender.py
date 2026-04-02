@@ -37,11 +37,22 @@ def send_email(to_email, to_name, simulate=True):
 
 def send_bulk_emails(df, email_col, name_col, simulate=True):
     results = []
+    failed_emails = []
     for _, row in tqdm(df.iterrows(), total=len(df), desc="Sending emails"):
-        success = send_email(row[email_col], row[name_col] if name_col else "User", simulate)
-        results.append((row[email_col], success))
-    # Reporte final
+        try:
+            success = send_email(row[email_col], row[name_col] if name_col else "User", simulate)
+            results.append((row[email_col], success))
+            if not success:
+                failed_emails.append(row[email_col])
+        except Exception as e:
+            logger.error(f"[CRITICAL] Unexpected error for {row[email_col]}: {e}")
+            results.append((row[email_col], False))
+            failed_emails.append(row[email_col])
+    
+    # Final report
     sent = sum(1 for _, ok in results if ok)
     failed = len(results) - sent
-    logger.info(f"Processed: {len(results)}, Sent: {sent}, Failed: {failed}")
-    return results
+    logger.info(f"Bulk send completed: {len(results)} processed, {sent} sent, {failed} failed")
+    
+    # Return tuple for detailed tracking in main.py
+    return sent, failed, results

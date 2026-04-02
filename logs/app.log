@@ -96,3 +96,15 @@
 2026-04-02 01:45:57,644 - INFO - [SIMULATE] Sending email to fausto@gmail.com
 2026-04-02 01:45:57,645 - INFO - [SIMULATE] Sending email to ocampolautaro56@gmail.com
 2026-04-02 01:45:57,645 - INFO - Processed: 3, Sent: 3, Failed: 0
+2026-04-02 03:13:42,588 - INFO - Loaded file: clientes.csv
+2026-04-02 03:13:42,589 - WARNING - CSV is missing optional 'name' column. Emails will use 'User' as fallback.
+2026-04-02 03:13:42,606 - INFO - Valid emails: 3
+2026-04-02 03:13:42,606 - INFO - Invalid emails: 1
+2026-04-02 03:13:42,639 - INFO - Saved CSV: output/filtered_emails.csv
+2026-04-02 03:13:42,642 - INFO - Saved CSV: output/invalid_emails.csv
+2026-04-02 03:13:42,644 - INFO - Saved CSV: output/valid_emails.csv
+2026-04-02 03:13:42,645 - INFO - Running in simulation mode
+2026-04-02 03:13:42,945 - INFO - [SIMULATE] Sending email to ocampolautaro56@gmail.com
+2026-04-02 03:13:42,946 - INFO - [SIMULATE] Sending email to fausto@gmail.com
+2026-04-02 03:13:42,947 - INFO - [SIMULATE] Sending email to ocampolautaro56@gmail.com
+2026-04-02 03:13:42,948 - INFO - Bulk send completed: 3 processed, 3 sent, 0 failed
