@@ -1,29 +1,35 @@
-Automation CSV - Guía rápida de uso
+Automation CSV - Quick Start Guide
 
-Requisitos:
-- Tener Docker instalado
-- En Windows: Docker Desktop (incluye Docker Compose)
-- Tener los CSV en la carpeta 'data'
-- Editar .env con EMAIL_USER y EMAIL_PASS
+Requirements:
+- Docker installed
+- On Windows: Docker Desktop (includes Docker Compose)
+- CSV files placed in 'data' folder
+- Create a .env file with EMAIL_USER and EMAIL_PASS
 
-Linux/Mac:
-1. Abrir terminal en la carpeta del proyecto
-2. Ejecutar:
-   ./run.sh simulate      # simula emails
-   ./run.sh send          # envía todos los emails reales
-   ./run.sh send 5        # envía solo 5 emails para prueba
+Linux / Mac:
+1. Open terminal in the project folder
+2. Run:
+   ./run.sh             # default: simulate emails
+   ./run.sh simulate    # simulate emails
+   ./run.sh send        # send all emails
+   ./run.sh send 5      # send only 5 emails for testing
 
 Windows:
-1. Abrir CMD o PowerShell en la carpeta del proyecto
-2. Ejecutar:
-   run.bat simulate
-   run.bat send
-   run.bat send 5
+1. Open CMD or PowerShell in the project folder
+2. Run:
+   run.bat             # default: simulate emails
+   run.bat simulate    # simulate emails
+   run.bat send        # send all emails
+   run.bat send 5      # send only 5 emails for testing
 
-Resultados:
-- Archivos generados en 'output/' (filtered_emails.csv, valid_emails.csv, invalid_emails.csv)
-- Logs de ejecución en 'logs/app.log'
+Outputs:
+- Files generated in 'output/':
+  filtered_emails.csv – emails filtered by domain
+  valid_emails.csv    – all valid emails
+  invalid_emails.csv  – invalid emails
+
+- Logs stored in 'logs/app.log'
 
 Tips:
-- Siempre probar con simulate antes de enviar emails reales
-- Para clientes, usar --limit durante demostraciones
+- Always run simulate first to check results
+- For demos or client tests, use the LIMIT option
