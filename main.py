@@ -11,6 +11,12 @@ parser.add_argument("-o", "--output", default="output", help="Output folder")
 parser.add_argument("-d", "--domain", default="gmail.com", help="Domain filter")
 parser.add_argument("--simulate", action="store_true", help="Simulate sending")
 parser.add_argument("--send", action="store_true", help="Send real emails")
+parser.add_argument(
+	"--limit",
+	type=int,
+	help="Number emails to sender(optional)"
+)
+
 args = parser.parse_args()
 
 if args.simulate and args.send:

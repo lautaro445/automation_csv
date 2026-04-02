@@ -1,0 +1,29 @@
+Automation CSV - Guía rápida de uso
+
+Requisitos:
+- Tener Docker instalado
+- En Windows: Docker Desktop (incluye Docker Compose)
+- Tener los CSV en la carpeta 'data'
+- Editar .env con EMAIL_USER y EMAIL_PASS
+
+Linux/Mac:
+1. Abrir terminal en la carpeta del proyecto
+2. Ejecutar:
+   ./run.sh simulate      # simula emails
+   ./run.sh send          # envía todos los emails reales
+   ./run.sh send 5        # envía solo 5 emails para prueba
+
+Windows:
+1. Abrir CMD o PowerShell en la carpeta del proyecto
+2. Ejecutar:
+   run.bat simulate
+   run.bat send
+   run.bat send 5
+
+Resultados:
+- Archivos generados en 'output/' (filtered_emails.csv, valid_emails.csv, invalid_emails.csv)
+- Logs de ejecución en 'logs/app.log'
+
+Tips:
+- Siempre probar con simulate antes de enviar emails reales
+- Para clientes, usar --limit durante demostraciones

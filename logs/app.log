@@ -1,0 +1,98 @@
+2026-04-01 14:09:44,304 - INFO - Loaded file: clientes.csv
+2026-04-01 14:09:44,337 - INFO - Valid emails: 0
+2026-04-01 14:09:44,337 - INFO - Invalid emails: 3
+2026-04-01 14:11:30,058 - INFO - Loaded file: clientes.csv
+2026-04-01 14:11:30,062 - INFO - Valid emails: 0
+2026-04-01 14:11:30,062 - INFO - Invalid emails: 3
+2026-04-01 14:11:38,601 - INFO - Loaded file: clientes.csv
+2026-04-01 14:11:38,605 - INFO - Valid emails: 0
+2026-04-01 14:11:38,605 - INFO - Invalid emails: 3
+2026-04-01 14:15:42,141 - INFO - Loaded file: clientes.csv
+2026-04-01 14:15:42,145 - INFO - Valid emails: 0
+2026-04-01 14:15:42,145 - INFO - Invalid emails: 3
+2026-04-01 14:16:59,772 - INFO - Loaded file: clientes.csv
+2026-04-01 14:16:59,776 - INFO - Valid emails: 0
+2026-04-01 14:16:59,777 - INFO - Invalid emails: 3
+2026-04-01 14:28:10,694 - INFO - Loaded file: clientes.csv
+2026-04-01 14:28:10,741 - INFO - Valid emails: 3
+2026-04-01 14:28:10,741 - INFO - Invalid emails: 0
+2026-04-01 14:28:10,742 - INFO - Sending email to ocampolautaro505@gmail.com
+2026-04-01 14:28:10,742 - INFO - Sending email to fausto@gmail.com
+2026-04-01 14:28:10,742 - INFO - Sending email to iris@gmail.com
+2026-04-01 15:25:33,833 - INFO - Loaded file: clientes.csv
+2026-04-01 15:25:33,837 - INFO - Valid emails: 3
+2026-04-01 15:25:33,837 - INFO - Invalid emails: 0
+2026-04-01 15:25:33,847 - INFO - Saved CSV: output/filtered_emails.csv
+2026-04-01 15:25:33,848 - INFO - Saved CSV: output/invalid_emails.csv
+2026-04-01 15:25:33,848 - INFO - Saved CSV: output/valid_emails.csv
+2026-04-01 15:25:33,849 - INFO - No sending mode selected. Use --simulate or --send
+2026-04-01 15:26:03,784 - INFO - Loaded file: clientes.csv
+2026-04-01 15:26:03,786 - INFO - Valid emails: 3
+2026-04-01 15:26:03,786 - INFO - Invalid emails: 0
+2026-04-01 15:26:03,788 - INFO - Saved CSV: output/filtered_emails.csv
+2026-04-01 15:26:03,788 - INFO - Saved CSV: output/invalid_emails.csv
+2026-04-01 15:26:03,789 - INFO - Saved CSV: output/valid_emails.csv
+2026-04-01 15:26:03,789 - INFO - Running in simulation mode
+2026-04-01 15:26:04,216 - INFO - [SIMULATE] Sending email to ocampolautaro505@gmail.com
+2026-04-01 15:26:04,218 - INFO - [SIMULATE] Sending email to fausto@gmail.com
+2026-04-01 15:26:04,220 - INFO - [SIMULATE] Sending email to iris@gmail.com
+2026-04-01 15:27:13,294 - INFO - Loaded file: clientes.csv
+2026-04-01 15:27:13,296 - INFO - Valid emails: 3
+2026-04-01 15:27:13,296 - INFO - Invalid emails: 0
+2026-04-01 15:27:13,298 - INFO - Saved CSV: output/filtered_emails.csv
+2026-04-01 15:27:13,298 - INFO - Saved CSV: output/invalid_emails.csv
+2026-04-01 15:27:13,299 - INFO - Saved CSV: output/valid_emails.csv
+2026-04-01 15:27:13,299 - INFO - Running in simulation mode
+2026-04-01 15:27:13,310 - INFO - [SIMULATE] Sending email to ocampolautaro505@gmail.com
+2026-04-01 15:27:13,311 - INFO - [SIMULATE] Sending email to fausto@gmail.com
+2026-04-01 15:27:13,312 - INFO - [SIMULATE] Sending email to iris@gmail.com
+2026-04-01 16:16:38,486 - INFO - Loaded file: clientes.csv
+2026-04-01 16:16:38,488 - INFO - Valid emails: 3
+2026-04-01 16:16:38,489 - INFO - Invalid emails: 0
+2026-04-01 16:16:38,490 - INFO - Saved CSV: output/filtered_emails.csv
+2026-04-01 16:16:38,491 - INFO - Saved CSV: output/invalid_emails.csv
+2026-04-01 16:16:38,491 - INFO - Saved CSV: output/valid_emails.csv
+2026-04-01 16:16:38,491 - INFO - Running in simulation mode
+2026-04-01 16:16:38,505 - INFO - [SIMULATE] Sending email to ocampolautaro505@gmail.com
+2026-04-01 16:16:38,506 - INFO - [SIMULATE] Sending email to fausto@gmail.com
+2026-04-01 16:16:38,506 - INFO - [SIMULATE] Sending email to iris@gmail.com
+2026-04-01 16:16:38,507 - INFO - Processed: 3, Sent: 3, Failed: 0
+2026-04-01 16:16:38,968 - INFO - Loaded file: clientes.csv
+2026-04-01 16:16:38,970 - INFO - Valid emails: 3
+2026-04-01 16:16:38,970 - INFO - Invalid emails: 0
+2026-04-01 16:16:38,972 - INFO - Saved CSV: output/filtered_emails.csv
+2026-04-01 16:16:38,972 - INFO - Saved CSV: output/invalid_emails.csv
+2026-04-01 16:16:38,973 - INFO - Saved CSV: output/valid_emails.csv
+2026-04-01 16:16:38,973 - INFO - Sending real emails
+2026-04-01 16:16:42,092 - INFO - [OK] Email sent to ocampolautaro505@gmail.com
+2026-04-01 16:16:44,662 - INFO - [OK] Email sent to fausto@gmail.com
+2026-04-01 16:16:47,215 - INFO - [OK] Email sent to iris@gmail.com
+2026-04-01 16:16:47,216 - INFO - Processed: 3, Sent: 3, Failed: 0
+2026-04-01 16:23:28,607 - INFO - Loaded file: clientes.csv
+2026-04-01 16:23:28,610 - INFO - Valid emails: 3
+2026-04-01 16:23:28,610 - INFO - Invalid emails: 1
+2026-04-01 16:23:28,611 - INFO - Saved CSV: output/filtered_emails.csv
+2026-04-01 16:23:28,612 - INFO - Saved CSV: output/invalid_emails.csv
+2026-04-01 16:23:28,612 - INFO - Saved CSV: output/valid_emails.csv
+2026-04-01 16:23:28,612 - INFO - Sending real emails
+2026-04-01 16:23:32,204 - INFO - [OK] Email sent to ocampolautaro56@gmail.com
+2026-04-01 16:23:35,537 - INFO - [OK] Email sent to fausto@gmail.com
+2026-04-01 16:23:38,765 - INFO - [OK] Email sent to ocampolautaro56@gmail.com
+2026-04-01 16:23:38,766 - INFO - Processed: 3, Sent: 3, Failed: 0
+2026-04-02 01:41:53,975 - INFO - Loaded file: clientes.csv
+2026-04-02 01:41:53,977 - INFO - Valid emails: 3
+2026-04-02 01:41:53,978 - INFO - Invalid emails: 1
+2026-04-02 01:44:16,030 - INFO - Loaded file: clientes.csv
+2026-04-02 01:44:16,033 - INFO - Valid emails: 3
+2026-04-02 01:44:16,033 - INFO - Invalid emails: 1
+2026-04-02 01:45:57,472 - INFO - Loaded file: clientes.csv
+2026-04-02 01:45:57,489 - INFO - Valid emails: 3
+2026-04-02 01:45:57,489 - INFO - Invalid emails: 1
+2026-04-02 01:45:57,491 - INFO - Saved CSV: output/filtered_emails.csv
+2026-04-02 01:45:57,492 - INFO - Saved CSV: output/invalid_emails.csv
+2026-04-02 01:45:57,493 - INFO - Saved CSV: output/valid_emails.csv
+2026-04-02 01:45:57,493 - INFO - Running in simulation mode
+2026-04-02 01:45:57,643 - INFO - [SIMULATE] Sending email to ocampolautaro56@gmail.com
+2026-04-02 01:45:57,644 - INFO - [SIMULATE] Sending email to fausto@gmail.com
+2026-04-02 01:45:57,645 - INFO - [SIMULATE] Sending email to ocampolautaro56@gmail.com
+2026-04-02 01:45:57,645 - INFO - Processed: 3, Sent: 3, Failed: 0
