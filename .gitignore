@@ -1,4 +1,7 @@
-mi_entorno/
-*.pyc
-__pycache__/
-.env
+output/
+logs/
+*.csv
+*.log
+output/
+logs/
+data/*.csv
